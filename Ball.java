@@ -91,23 +91,7 @@ public class Ball {
         if(y + size > floor) {
             y -= yVelocity;
             yVelocity *= -1;
-            int randColor = (int) (Math.random() * 16);
-            // Added Creativity: Uses switch statement to set 
-            // Ball that landed on the floor's color. Color depending on the random number
-            // generated from the variable randColor.
-            switch (randColor) {
-                case 1 -> this.color = Color.RED;
-                case 2 -> this.color = Color.ORANGE;
-                case 3 -> this.color = Color.YELLOW;
-                case 4 -> this.color = Color.GREEN;
-                case 5 -> this.color = Color.BLUE;
-                case 6 -> this.color = Color.MAGENTA;
-                case 7 -> this.color = Color.BLACK;
-                case 8 -> this.color = Color.CYAN;
-                case 9 -> this.color = Color.DARK_GRAY;
-                case 10 -> this.color = Color.LIGHT_GRAY;
-                default -> this.color = AnimatedPanel.getRandColor();
-            }
+            this.color = AnimatedPanel.getRandColor();
         }
 	}
 
