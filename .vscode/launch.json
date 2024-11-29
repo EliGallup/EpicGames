@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "EpicGames_6d18dafa"
+        },
+        {
+            "type": "java",
             "name": "Main$Main",
             "request": "launch",
             "mainClass": "Main$Main",
